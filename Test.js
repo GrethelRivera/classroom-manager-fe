@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React,{useState, useEffect} from 'react'; // react component. STATE display edits
+import React,{useState, useEffect, Fragment} from 'react'; // react component. STATE display edits
 import Button from '../common/Button'
 function Test() {
 
@@ -19,6 +19,8 @@ function Test() {
     }, [])
 
     return (
+        <Fragment> 
+
         <div>
             <h1> Test Component</h1>
             <p>{counter}</p>
@@ -26,7 +28,7 @@ function Test() {
                 Increase 
             </Button>
         </div>
-    
+        </Fragment>
     );
 }
 
